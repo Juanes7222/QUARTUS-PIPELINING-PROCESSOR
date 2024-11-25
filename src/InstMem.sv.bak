@@ -6,7 +6,7 @@ module InstMem(
   logic [7:0] mem [1024:0];
   
   initial begin
-    $readmemh("instructions_hex.hex", mem);
+    $readmemb ("InstFile.txt", mem);
   end
 
   

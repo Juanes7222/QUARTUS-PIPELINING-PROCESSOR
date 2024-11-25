@@ -1,0 +1,36 @@
+|top_level
+clk => ~NO_FANOUT~
+clk_fpga => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+reset_core => ~NO_FANOUT~
+VGA_R[0] <= <GND>
+VGA_R[1] <= <GND>
+VGA_R[2] <= <GND>
+VGA_R[3] <= <GND>
+VGA_R[4] <= <GND>
+VGA_R[5] <= <GND>
+VGA_R[6] <= <GND>
+VGA_R[7] <= <GND>
+VGA_G[0] <= <GND>
+VGA_G[1] <= <GND>
+VGA_G[2] <= <GND>
+VGA_G[3] <= <GND>
+VGA_G[4] <= <GND>
+VGA_G[5] <= <GND>
+VGA_G[6] <= <GND>
+VGA_G[7] <= <GND>
+VGA_B[0] <= <GND>
+VGA_B[1] <= <GND>
+VGA_B[2] <= <GND>
+VGA_B[3] <= <GND>
+VGA_B[4] <= <GND>
+VGA_B[5] <= <GND>
+VGA_B[6] <= <GND>
+VGA_B[7] <= <GND>
+VGA_CLK <= <GND>
+VGA_SYNC_N <= <GND>
+VGA_BLANK_N <= <GND>
+VGA_HS <= <GND>
+VGA_VS <= <GND>
+
+

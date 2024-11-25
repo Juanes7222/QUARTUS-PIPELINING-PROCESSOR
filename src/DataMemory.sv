@@ -1,0 +1,51 @@
+module DataMemory(
+  input logic [31:0] Address,
+  input logic [31:0] DataWr,
+  
+  input logic [2:0] DMCtrl,
+  input logic DMWr,
+  
+  output logic [31:0] DataRd
+);
+  
+  logic [7:0] mem [1024:0];
+  
+  always @(*) begin
+    if(DMWr == 0) begin
+      case(DMCtrl)
+        3'b000: DataRd <= {24'b0, mem[Address]};
+        3'b001: DataRd <= {16'b0, mem[Address + 1], mem[Address]};
+        3'b010: DataRd <= {mem[Address + 3], mem[Address + 2], mem[Address + 1], mem[Address]};
+        3'b100: DataRd <= $unsigned({24'b0, mem[Address]}); 
+        3'b101: DataRd <= $unsigned({16'b0, mem[Address + 1], mem[Address]}); 
+      endcase
+    end
+    
+  if(DMWr == 1)
+      case(DMCtrl)
+        3'b000: begin
+          mem[Address] <= DataWr[7:0];
+        end
+        
+        3'b001: begin
+          mem[Address] <= DataWr[7:0];
+          mem[Address+1] <= DataWr[15:8];
+          ;
+        end
+        
+        3'b010: begin
+          mem[Address] <= DataWr[7:0];
+          mem[Address + 1] <= DataWr[15:8];
+          mem[Address + 2] <= DataWr [23:16];
+          mem[Address + 3] <= DataWr [31:24];
+        end
+        
+        /*3'b100: begin
+          mem[Address] <= $unsigned(DataWr[7:0]);
+        end
+        
+        3'b101: begin
+          DataRD <= $unsigned(DataWr[15:0]); */
+      endcase
+  end
+endmodule

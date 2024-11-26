@@ -1,4 +1,12 @@
-module CPU(input logic clk);
+module CPU(
+	input logic clk,
+	
+	output [31:0] PC_fe_vga, PC_de_vga, PC_ex_vga, PCP4_me_vga, PCP4_wb_vga, inst, imm, rs1, rs2, rd, a, b, res, wrb, addr, datard,
+	output [31:0] Ru [0:31],
+	output [2:0] ctrl,
+	output [3:0] alu_ctrl, BrOp_vga
+	
+	);
   
   //GLOBALES
   wire [31:0] NextPC;
@@ -153,7 +161,8 @@ module CPU(input logic clk);
     .DataWr(DataWr),
     .RUWr(RUWr_wb),
     .RU1(RUrs1),
-    .RU2(RUrs2)
+    .RU2(RUrs2),
+	 .Ru_vga(Ru)
   );
   
   ImmUnit ImmUnit(
@@ -329,5 +338,29 @@ module CPU(input logic clk);
     .Selector(RUDataWrSrc_wb),
     .Result(DataWr)
   );
+  
+  assign PC_fe_vga = PC_fe;
+  assign PC_de_vga = PC_de;
+  assign PC_ex_vga = PC_ex;
+  assign PC_me_vga = PCP4_me;
+  assign PC_wb_vga = PCP4_wb;
+  
+  assign inst = Inst;
+  assign imm = ImmExt;
+  assign rs1 = RUrs1;
+  assign rs2 = RUrs2;
+  assign rd = RD_wb;
+  
+  assign a = A;
+  assign b = B;
+  assign res = ALURes;
+  
+  assign wrb = DataWr;
+  assign addr = ALURes_me;
+  assign datard = DataRd;
+  
+  assign ctrl = DMCtrl_me;
+  assign alu_ctrl = ALUOp_ex;
+  assign BrOp_vga = BrOp_ex;
   
  endmodule

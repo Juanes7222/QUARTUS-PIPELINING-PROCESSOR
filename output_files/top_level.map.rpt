@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Mon Nov 25 10:26:03 2024
+Mon Nov 25 14:47:47 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -10,14 +10,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
- 12. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -41,27 +34,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 25 10:26:03 2024          ;
-; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
-; Revision Name                   ; top_level                                      ;
-; Top-level Entity Name           ; top_level                                      ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 0                                              ;
-; Total pins                      ; 33                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-----------------------------+------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Mon Nov 25 14:47:47 2024              ;
+; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name               ; top_level                                      ;
+; Top-level Entity Name       ; top_level                                      ;
+; Family                      ; Cyclone V                                      ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
+; Total registers             ; N/A until Partition Merge                      ;
+; Total pins                  ; N/A until Partition Merge                      ;
+; Total virtual pins          ; N/A until Partition Merge                      ;
+; Total block memory bits     ; N/A until Partition Merge                      ;
+; Total PLLs                  ; N/A until Partition Merge                      ;
+; Total DLLs                  ; N/A until Partition Merge                      ;
++-----------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -69,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; top_level          ; top_level          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -167,200 +155,53 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-; src/top_level.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 0     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 0     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 33    ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 33    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |top_level                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 33   ; 0            ; |top_level          ; top_level   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-; boundary_port         ; 33                          ;
-;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Nov 25 10:25:58 2024
+    Info: Processing started: Mon Nov 25 14:47:43 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_level -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file src/fetchstage.sv
-    Info (12023): Found entity 1: FetchStage File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/FetchStage.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/adder.sv
-    Info (12023): Found entity 1: Adder File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/Adder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/mux2.sv
-    Info (12023): Found entity 1: MUX2 File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/MUX2.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/mux3.sv
-    Info (12023): Found entity 1: MUX3 File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/MUX3.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/instmem.sv
-    Info (12023): Found entity 1: InstMem File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/InstMem.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/decodestage.sv
-    Info (12023): Found entity 1: DecodeStage File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/DecodeStage.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/top_level.sv
-    Info (12023): Found entity 1: top_level File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/controlunit.sv
-    Info (12023): Found entity 1: ControlUnit File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/ControlUnit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/regunit.sv
-    Info (12023): Found entity 1: RegUnit File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/RegUnit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/immunit.sv
-    Info (12023): Found entity 1: ImmUnit File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/ImmUnit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/exestage.sv
-    Info (12023): Found entity 1: ExeStage File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/ExeStage.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/ALU.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/branchunit.sv
-    Info (12023): Found entity 1: BranchUnit File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/BranchUnit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/memstage.sv
-    Info (12023): Found entity 1: MemStage File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/MemStage.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/datamemory.sv
-    Info (12023): Found entity 1: DataMemory File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/DataMemory.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/wbstage.sv
-    Info (12023): Found entity 1: WBStage File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/WBStage.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/hazarddetunit.sv
-    Info (12023): Found entity 1: HazardDetUnit File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/HazardDetUnit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/forwardingunit.sv
-    Info (12023): Found entity 1: ForwardingUnit File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/ForwardingUnit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/cpu.sv
-    Info (12023): Found entity 1: CPU File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/CPU.sv Line: 1
-Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Warning (10034): Output port "VGA_R" at top_level.sv(6) has no driver File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-Warning (10034): Output port "VGA_G" at top_level.sv(7) has no driver File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-Warning (10034): Output port "VGA_B" at top_level.sv(8) has no driver File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-Warning (10034): Output port "VGA_CLK" at top_level.sv(9) has no driver File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 9
-Warning (10034): Output port "VGA_SYNC_N" at top_level.sv(10) has no driver File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 10
-Warning (10034): Output port "VGA_BLANK_N" at top_level.sv(11) has no driver File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 11
-Warning (10034): Output port "VGA_HS" at top_level.sv(12) has no driver File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 12
-Warning (10034): Output port "VGA_VS" at top_level.sv(14) has no driver File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 14
-Warning (12158): Entity "top_level" contains only dangling pins
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "VGA_R[0]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-    Warning (13410): Pin "VGA_R[1]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-    Warning (13410): Pin "VGA_R[2]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-    Warning (13410): Pin "VGA_R[3]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-    Warning (13410): Pin "VGA_R[4]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-    Warning (13410): Pin "VGA_R[5]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-    Warning (13410): Pin "VGA_R[6]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-    Warning (13410): Pin "VGA_R[7]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 6
-    Warning (13410): Pin "VGA_G[0]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-    Warning (13410): Pin "VGA_G[1]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-    Warning (13410): Pin "VGA_G[2]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-    Warning (13410): Pin "VGA_G[3]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-    Warning (13410): Pin "VGA_G[4]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-    Warning (13410): Pin "VGA_G[5]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-    Warning (13410): Pin "VGA_G[6]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-    Warning (13410): Pin "VGA_G[7]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 7
-    Warning (13410): Pin "VGA_B[0]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-    Warning (13410): Pin "VGA_B[1]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-    Warning (13410): Pin "VGA_B[2]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-    Warning (13410): Pin "VGA_B[3]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-    Warning (13410): Pin "VGA_B[4]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-    Warning (13410): Pin "VGA_B[5]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-    Warning (13410): Pin "VGA_B[6]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-    Warning (13410): Pin "VGA_B[7]" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 8
-    Warning (13410): Pin "VGA_CLK" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 9
-    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 10
-    Warning (13410): Pin "VGA_BLANK_N" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 11
-    Warning (13410): Pin "VGA_HS" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 12
-    Warning (13410): Pin "VGA_VS" is stuck at GND File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 14
-Info (144001): Generated suppressed messages file C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/output_files/top_level.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 2
-    Warning (15610): No output dependent on input pin "clk_fpga" File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 3
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "reset_core" File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/top_level.sv Line: 5
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 29 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Mon Nov 25 10:26:03 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:02
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/output_files/top_level.map.smsg.
+Warning (12019): Can't analyze file -- file src/char_rom.v is missing
+Warning (12019): Can't analyze file -- file src/clock_divider.v is missing
+Warning (12019): Can't analyze file -- file src/data_memory.v is missing
+Warning (12019): Can't analyze file -- file src/sum4.v is missing
+Warning (12019): Can't analyze file -- file src/register_unit.v is missing
+Warning (12019): Can't analyze file -- file src/pc.v is missing
+Warning (12019): Can't analyze file -- file src/mux_3.v is missing
+Warning (12019): Can't analyze file -- file src/mux_2.v is missing
+Warning (12019): Can't analyze file -- file src/instruction_memory.v is missing
+Warning (12019): Can't analyze file -- file src/imm_generator.v is missing
+Warning (12019): Can't analyze file -- file src/control_unit.v is missing
+Warning (12019): Can't analyze file -- file src/branch_unit.v is missing
+Warning (12019): Can't analyze file -- file src/alu.v is missing
+Warning (12019): Can't analyze file -- file src/top_level.v is missing
+Warning (12019): Can't analyze file -- file src/clock50_25.v is missing
+Warning (12019): Can't analyze file -- file src/vga_controller.v is missing
+Warning (12019): Can't analyze file -- file src/top_vga_display.v is missing
+Warning (12019): Can't analyze file -- file src/to_ascii.v is missing
+Warning (12019): Can't analyze file -- file src/bin_to_hex_ascii.sv is missing
+Warning (12019): Can't analyze file -- file src/ascii_test.v is missing
+Warning (12019): Can't analyze file -- file src/core.v is missing
+Warning (12019): Can't analyze file -- file src/char_rom_file.v is missing
+Warning (12019): Can't analyze file -- file src/fixed_rom.v is missing
+Warning (12019): Can't analyze file -- file src/decoder.v is missing
+Warning (12019): Can't analyze file -- file src/bin_to_ascii.v is missing
+Warning (12019): Can't analyze file -- file src/bin_to_hex_ascii_2.v is missing
+Warning (12019): Can't analyze file -- file src/bin_to_ascii_5.v is missing
+Warning (12019): Can't analyze file -- file src/bin_to_ascii_3.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file src/vgacontroller.sv
+    Info (12023): Found entity 1: vga_controller File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/VgaController.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/charrom.sv
+    Info (12023): Found entity 1: char_rom File: C:/Users/juanb/OneDrive/Documentos/GitHub/QUARTUS-PIPELINING-PROCESSOR/src/CharRom.sv Line: 1
+Error (12007): Top-level design entity "top_level" is undefined
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 29 warnings
+    Error: Peak virtual memory: 4774 megabytes
+    Error: Processing ended: Mon Nov 25 14:47:47 2024
+    Error: Elapsed time: 00:00:04
+    Error: Total CPU time (on all processors): 00:00:03
 
 

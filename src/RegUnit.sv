@@ -9,7 +9,8 @@ module RegUnit(
   input logic RUWr,
   
   output logic [31:0] RU1,
-  output logic [31:0] RU2
+  output logic [31:0] RU2,
+  output logic [31:0] Ru_vga [0:31]
 );
   
   logic [31:0] RU [31:0];
@@ -28,5 +29,7 @@ module RegUnit(
       RU2 <= RU[RS2];
     end
   end
+  
+  assign Ru_vga = RU;
   
 endmodule

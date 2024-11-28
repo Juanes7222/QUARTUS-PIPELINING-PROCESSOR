@@ -1,8 +1,8 @@
 module bin_to_hex_ascii(
-    input [31:0] bin_in,         // Valor binario de 32 bits
-    output [63:0] ascii_out      // Salida ASCII de 64 bits (8 caracteres x 8 bits)
+    input  logic [31:0] bin_in,         // Valor binario de 32 bits
+    output logic [63:0] ascii_out       // Salida ASCII de 64 bits (8 caracteres x 8 bits)
 );
-    
+
     // Mapeo de cada dígito hexadecimal de bin_in a su representación ASCII
     to_ascii digit7(.hex_digit(bin_in[31:28]), .ascii(ascii_out[63:56]));
     to_ascii digit6(.hex_digit(bin_in[27:24]), .ascii(ascii_out[55:48]));

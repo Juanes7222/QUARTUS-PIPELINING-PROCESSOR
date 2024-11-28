@@ -1,9 +1,9 @@
 module to_ascii (
-    input [3:0] hex_digit, // Dato hexadecimal de 4 bits
-    output reg [7:0] ascii  // Salida ASCII de 8 bits
+    input  logic [3:0] hex_digit, // Dato hexadecimal de 4 bits
+    output logic [7:0] ascii      // Salida ASCII de 8 bits
 );
     
-    always @(*) begin
+    always_comb begin
         case (hex_digit)
             4'h0: ascii = 8'h30; // '0'
             4'h1: ascii = 8'h31; // '1'

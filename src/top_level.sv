@@ -64,7 +64,7 @@ module top_level(
 		.PC_de(PC_de_vga),
 		.PC_ex(PC_ex_vga),
 		.PCP4_me(PCP4_me_vga),
-		.PCP4_wb(PCP4_wb),
+		.PCP4_wb(PCP4_wb_vga),
 		.inst(inst),
 		.imm(imm),
 		.rs1(rs1),
@@ -89,5 +89,10 @@ module top_level(
 		.VGA_B(VGA_B)
 
 		);
+		
+	
+	 assign VGA_CLK = clk_25;	
+	 assign VGA_SYNC_N = 0;          // Sincronización en bajo
+    assign VGA_BLANK_N = video_on;  // Señal de blanking
 
 endmodule

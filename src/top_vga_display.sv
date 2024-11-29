@@ -3,7 +3,8 @@ module top_vga_display (
     input [31:0] inst, imm, rs1, rs2, rd, a, b, res, wrb, PC_fe, PC_de, PC_ex, PCP4_me, PCP4_wb, address, DataRd,
 	 input [31:0] Ru [0:31],
 	 input [2:0] ctrl,
-	 input [3:0] alu_ctrl, BrOp,
+	 input [3:0] alu_ctrl, 
+	 input [4:0] BrOp,
 	 input [9:0] x,
 	 input [9:0] y, 
 	 input logic NextPCSrc,
@@ -14,23 +15,20 @@ module top_vga_display (
     output [7:0] VGA_B        // Salida del color azul
 );
 
-	 reg [7:0] ascii;
-	 reg [31:0] value;
-  wire [63:0] value_ascii;
-  wire [15:0] value_ascii_2;
-  wire [7:0] value_ascii_1;
-  wire [55:0] value_ascii_bin;
-  wire [39:0] value_ascii_bin_5;
-  wire [23:0] value_ascii_bin_3;
-  reg [2:0] index;
-  reg [2:0] x_counter;
-  reg enable;
-  wire [7:0] type_;
-  
-	 
-	 wire [7:0] fixed_ascii;
-	 reg [1:0] case_;
-	 reg [1:0] case_2;
+	  reg [7:0] ascii;
+	  reg [31:0] value;
+	  wire [63:0] value_ascii;
+	  wire [15:0] value_ascii_2;
+	  wire [7:0] value_ascii_1;
+	  wire [55:0] value_ascii_bin;
+	  wire [39:0] value_ascii_bin_5;
+	  wire [23:0] value_ascii_bin_3;
+	  reg [2:0] index;
+	  reg [2:0] x_counter;
+	  wire [7:0] type_;
+	  wire [7:0] fixed_ascii;
+	  reg [1:0] case_;
+	  reg [1:0] case_2;
   
   initial begin
     index <= 3'b000;
@@ -119,7 +117,7 @@ module top_vga_display (
 	end
 	
 	
-  always @* begin
+  always @(*) begin
     if (~reset) begin
 			case_ = 2'b00;
 			case_2 = 2'b11;
@@ -138,10 +136,9 @@ module top_vga_display (
 				end else if (x >= 104 && x < 168 && y >= 32 && y < 48) begin
 					value = inst;
 					case_ = 2'b00;
-				end else if (x >= 288 && x < 304 && y >= 32 && y < 48) begin
+				end else if (x >= 288 && x < 296 && y >= 32 && y < 48) begin
 					value = type_;
 					case_ = 2'b10;
-					enable = 1'b0;
 				end else if (x >= 544 && x < 552 && y >= 32 && y < 48) begin
 					value = alu_ctrl;
 					case_ = 2'b11;
@@ -171,9 +168,9 @@ module top_vga_display (
 				end else if (x >= 288 && x < 352 && y >= 64 && y < 80) begin
 					value = rs2;
 					case_ = 2'b00;
-				end else if (x >= 560 && x < 568 && y >= 64 && y < 80) begin
+				end else if (x >= 560 && x < 576 && y >= 64 && y < 80) begin
 					value = BrOp;
-					case_ = 2'b11;
+					case_ = 2'b10;
 					
 				end else if (x >= 128 && x < 152 && y >= 80 && y < 96) begin
 					value = inst[14:12];

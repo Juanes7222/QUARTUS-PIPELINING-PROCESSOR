@@ -4,7 +4,8 @@ module CPU(
 	output [31:0] PC_fe_vga, PC_de_vga, PC_ex_vga, PCP4_me_vga, PCP4_wb_vga, inst, imm, rs1, rs2, rd, a, b, res, wrb, addr, datard,
 	output [31:0] Ru [0:31],
 	output [2:0] ctrl,
-	output [3:0] alu_ctrl, BrOp_vga
+	output [3:0] alu_ctrl, 
+	output [4:0] BrOp_vga
 	
 	);
   
@@ -342,8 +343,8 @@ module CPU(
   assign PC_fe_vga = PC_fe;
   assign PC_de_vga = PC_de;
   assign PC_ex_vga = PC_ex;
-  assign PC_me_vga = PCP4_me;
-  assign PC_wb_vga = PCP4_wb;
+  assign PCP4_me_vga = PCP4_me;
+  assign PCP4_wb_vga = PCP4_wb;
   
   assign inst = Inst;
   assign imm = ImmExt;

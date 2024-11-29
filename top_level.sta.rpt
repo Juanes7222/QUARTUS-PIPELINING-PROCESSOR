@@ -1,5 +1,5 @@
 Timing Analyzer report for top_level
-Tue Nov 26 16:20:29 2024
+Fri Nov 29 11:21:01 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -97,29 +97,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 2.28        ;
-; Maximum used               ; 16          ;
+; Average used               ; 1.99        ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   9.0%      ;
-;     Processor 3            ;   8.7%      ;
-;     Processor 4            ;   8.6%      ;
-;     Processor 5            ;   8.5%      ;
-;     Processor 6            ;   8.5%      ;
-;     Processor 7            ;   8.5%      ;
-;     Processor 8            ;   8.5%      ;
-;     Processor 9            ;   8.5%      ;
-;     Processor 10           ;   8.5%      ;
-;     Processor 11           ;   8.4%      ;
-;     Processor 12           ;   8.4%      ;
-;     Processor 13           ;   8.4%      ;
-;     Processor 14           ;   8.4%      ;
-;     Processor 15           ;   8.4%      ;
-;     Processor 16           ;   8.4%      ;
+;     Processor 2            ;   9.4%      ;
+;     Processor 3            ;   9.1%      ;
+;     Processor 4            ;   9.1%      ;
+;     Processor 5            ;   9.0%      ;
+;     Processor 6            ;   9.0%      ;
+;     Processor 7            ;   9.0%      ;
+;     Processor 8            ;   9.0%      ;
+;     Processor 9            ;   9.0%      ;
+;     Processor 10           ;   9.0%      ;
+;     Processor 11           ;   8.9%      ;
+;     Processor 12           ;   8.9%      ;
 +----------------------------+-------------+
 
 
@@ -140,10 +136,10 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+----------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                         ; Note ;
 +------------+-----------------+----------------------------------------------------+------+
-; 34.34 MHz  ; 34.34 MHz       ; vga_controller:VgaController|h_count_reg[3]        ;      ;
-; 283.45 MHz ; 283.45 MHz      ; clk_fpga                                           ;      ;
-; 288.93 MHz ; 288.93 MHz      ; clk                                                ;      ;
-; 395.73 MHz ; 395.73 MHz      ; vga_controller:VgaController|clock50_25:c|state[0] ;      ;
+; 34.43 MHz  ; 34.43 MHz       ; vga_controller:VgaController|h_count_reg[3]        ;      ;
+; 201.82 MHz ; 201.82 MHz      ; clk_fpga                                           ;      ;
+; 291.46 MHz ; 291.46 MHz      ; clk                                                ;      ;
+; 352.36 MHz ; 352.36 MHz      ; vga_controller:VgaController|clock50_25:c|state[0] ;      ;
 +------------+-----------------+----------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -159,10 +155,10 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------+---------+---------------+
 ; Clock                                              ; Slack   ; End Point TNS ;
 +----------------------------------------------------+---------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -15.339 ; -490.617      ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -9.668  ; -56.884       ;
-; clk_fpga                                           ; -3.660  ; -48.118       ;
-; clk                                                ; -2.461  ; -100.450      ;
+; vga_controller:VgaController|h_count_reg[3]        ; -16.356 ; -537.664      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -9.498  ; -55.414       ;
+; clk_fpga                                           ; -3.955  ; -83.294       ;
+; clk                                                ; -2.431  ; -192.775      ;
 +----------------------------------------------------+---------+---------------+
 
 
@@ -171,10 +167,10 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -6.030 ; -178.977      ;
-; clk_fpga                                           ; -1.668 ; -13.397       ;
-; clk                                                ; 0.381  ; 0.000         ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.947  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -6.667 ; -83.078       ;
+; clk_fpga                                           ; -0.467 ; -7.195        ;
+; clk                                                ; 0.266  ; 0.000         ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.709  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -195,10 +191,10 @@ No paths to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -4.302 ; -1558.329     ;
-; clk                                                ; -0.623 ; -109.405      ;
-; clk_fpga                                           ; -0.394 ; -14.602       ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -0.394 ; -3.074        ;
+; vga_controller:VgaController|h_count_reg[3]        ; -4.807 ; -1253.807     ;
+; clk                                                ; -0.527 ; -201.349      ;
+; clk_fpga                                           ; -0.394 ; -14.709       ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -0.394 ; -3.882        ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -213,10 +209,10 @@ No synchronizer chains to report.
 +------------+-----------------+----------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                         ; Note ;
 +------------+-----------------+----------------------------------------------------+------+
-; 34.97 MHz  ; 34.97 MHz       ; vga_controller:VgaController|h_count_reg[3]        ;      ;
-; 288.93 MHz ; 288.93 MHz      ; clk                                                ;      ;
-; 291.29 MHz ; 291.29 MHz      ; clk_fpga                                           ;      ;
-; 402.58 MHz ; 402.58 MHz      ; vga_controller:VgaController|clock50_25:c|state[0] ;      ;
+; 35.38 MHz  ; 35.38 MHz       ; vga_controller:VgaController|h_count_reg[3]        ;      ;
+; 209.73 MHz ; 209.73 MHz      ; clk_fpga                                           ;      ;
+; 287.27 MHz ; 287.27 MHz      ; clk                                                ;      ;
+; 360.49 MHz ; 360.49 MHz      ; vga_controller:VgaController|clock50_25:c|state[0] ;      ;
 +------------+-----------------+----------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -226,10 +222,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------+---------+---------------+
 ; Clock                                              ; Slack   ; End Point TNS ;
 +----------------------------------------------------+---------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -15.150 ; -486.181      ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -9.725  ; -57.129       ;
-; clk_fpga                                           ; -3.432  ; -45.749       ;
-; clk                                                ; -2.461  ; -101.509      ;
+; vga_controller:VgaController|h_count_reg[3]        ; -16.070 ; -526.251      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -9.539  ; -55.801       ;
+; clk_fpga                                           ; -3.768  ; -79.763       ;
+; clk                                                ; -2.481  ; -194.138      ;
 +----------------------------------------------------+---------+---------------+
 
 
@@ -238,10 +234,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -5.863 ; -174.539      ;
-; clk_fpga                                           ; -1.828 ; -19.018       ;
-; clk                                                ; 0.378  ; 0.000         ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.902  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -6.797 ; -87.130       ;
+; clk_fpga                                           ; -0.671 ; -11.635       ;
+; clk                                                ; 0.249  ; 0.000         ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.709  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -262,10 +258,10 @@ No paths to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -4.217 ; -1542.678     ;
-; clk                                                ; -0.635 ; -113.460      ;
-; clk_fpga                                           ; -0.394 ; -13.422       ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -0.394 ; -3.064        ;
+; vga_controller:VgaController|h_count_reg[3]        ; -4.901 ; -1279.529     ;
+; clk                                                ; -0.486 ; -192.335      ;
+; clk_fpga                                           ; -0.394 ; -13.427       ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -0.394 ; -3.849        ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -275,16 +271,16 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-----------------------------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                                         ;
-+----------------------------------------------------+--------+---------------+
-; Clock                                              ; Slack  ; End Point TNS ;
-+----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -9.171 ; -287.346      ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -5.423 ; -32.262       ;
-; clk_fpga                                           ; -2.631 ; -25.780       ;
-; clk                                                ; -1.095 ; -27.409       ;
-+----------------------------------------------------+--------+---------------+
++------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary                                          ;
++----------------------------------------------------+---------+---------------+
+; Clock                                              ; Slack   ; End Point TNS ;
++----------------------------------------------------+---------+---------------+
+; vga_controller:VgaController|h_count_reg[3]        ; -10.239 ; -329.680      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -5.380  ; -30.746       ;
+; clk_fpga                                           ; -2.505  ; -46.212       ;
+; clk                                                ; -1.270  ; -54.170       ;
++----------------------------------------------------+---------+---------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -292,10 +288,10 @@ No synchronizer chains to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -3.519 ; -102.758      ;
-; clk_fpga                                           ; -0.639 ; -4.904        ;
-; clk                                                ; 0.200  ; 0.000         ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.491  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -4.002 ; -44.374       ;
+; clk_fpga                                           ; -0.160 ; -2.109        ;
+; clk                                                ; 0.156  ; 0.000         ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.364  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -316,10 +312,10 @@ No paths to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -2.409 ; -754.633      ;
-; clk                                                ; -0.776 ; -130.483      ;
-; clk_fpga                                           ; -0.387 ; -10.102       ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.156  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -2.634 ; -553.072      ;
+; clk                                                ; -0.642 ; -206.227      ;
+; clk_fpga                                           ; -0.390 ; -10.218       ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -0.036 ; -0.070        ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -334,10 +330,10 @@ No synchronizer chains to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -8.260 ; -259.119      ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -4.984 ; -29.521       ;
-; clk_fpga                                           ; -2.135 ; -20.590       ;
-; clk                                                ; -0.923 ; -21.127       ;
+; vga_controller:VgaController|h_count_reg[3]        ; -9.104 ; -293.553      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -4.963 ; -28.518       ;
+; clk_fpga                                           ; -2.037 ; -38.231       ;
+; clk                                                ; -1.013 ; -42.450       ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -346,10 +342,10 @@ No synchronizer chains to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -3.169 ; -92.821       ;
-; clk_fpga                                           ; -0.755 ; -6.811        ;
-; clk                                                ; 0.190  ; 0.000         ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.434  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -3.694 ; -40.146       ;
+; clk_fpga                                           ; -0.278 ; -4.659        ;
+; clk                                                ; 0.142  ; 0.000         ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.335  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -370,10 +366,10 @@ No paths to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -2.090 ; -653.702      ;
-; clk                                                ; -0.816 ; -140.334      ;
-; clk_fpga                                           ; -0.427 ; -12.305       ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.157  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -2.328 ; -480.538      ;
+; clk                                                ; -0.662 ; -216.403      ;
+; clk_fpga                                           ; -0.429 ; -12.398       ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -0.003 ; -0.004        ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -383,22 +379,22 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                  ;
-+-----------------------------------------------------+----------+----------+----------+---------+---------------------+
-; Clock                                               ; Setup    ; Hold     ; Recovery ; Removal ; Minimum Pulse Width ;
-+-----------------------------------------------------+----------+----------+----------+---------+---------------------+
-; Worst-case Slack                                    ; -15.339  ; -6.030   ; N/A      ; N/A     ; -4.302              ;
-;  clk                                                ; -2.461   ; 0.190    ; N/A      ; N/A     ; -0.816              ;
-;  clk_fpga                                           ; -3.660   ; -1.828   ; N/A      ; N/A     ; -0.427              ;
-;  vga_controller:VgaController|clock50_25:c|state[0] ; -9.725   ; 0.434    ; N/A      ; N/A     ; -0.394              ;
-;  vga_controller:VgaController|h_count_reg[3]        ; -15.339  ; -6.030   ; N/A      ; N/A     ; -4.302              ;
-; Design-wide TNS                                     ; -696.069 ; -193.557 ; 0.0      ; 0.0     ; -1685.41            ;
-;  clk                                                ; -101.509 ; 0.000    ; N/A      ; N/A     ; -140.334            ;
-;  clk_fpga                                           ; -48.118  ; -19.018  ; N/A      ; N/A     ; -14.602             ;
-;  vga_controller:VgaController|clock50_25:c|state[0] ; -57.129  ; 0.000    ; N/A      ; N/A     ; -3.074              ;
-;  vga_controller:VgaController|h_count_reg[3]        ; -490.617 ; -178.977 ; N/A      ; N/A     ; -1558.329           ;
-+-----------------------------------------------------+----------+----------+----------+---------+---------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                 ;
++-----------------------------------------------------+----------+---------+----------+---------+---------------------+
+; Clock                                               ; Setup    ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++-----------------------------------------------------+----------+---------+----------+---------+---------------------+
+; Worst-case Slack                                    ; -16.356  ; -6.797  ; N/A      ; N/A     ; -4.901              ;
+;  clk                                                ; -2.481   ; 0.142   ; N/A      ; N/A     ; -0.662              ;
+;  clk_fpga                                           ; -3.955   ; -0.671  ; N/A      ; N/A     ; -0.429              ;
+;  vga_controller:VgaController|clock50_25:c|state[0] ; -9.539   ; 0.335   ; N/A      ; N/A     ; -0.394              ;
+;  vga_controller:VgaController|h_count_reg[3]        ; -16.356  ; -6.797  ; N/A      ; N/A     ; -4.901              ;
+; Design-wide TNS                                     ; -869.147 ; -98.765 ; 0.0      ; 0.0     ; -1489.14            ;
+;  clk                                                ; -194.138 ; 0.000   ; N/A      ; N/A     ; -216.403            ;
+;  clk_fpga                                           ; -83.294  ; -11.635 ; N/A      ; N/A     ; -14.709             ;
+;  vga_controller:VgaController|clock50_25:c|state[0] ; -55.801  ; 0.000   ; N/A      ; N/A     ; -3.882              ;
+;  vga_controller:VgaController|h_count_reg[3]        ; -537.664 ; -87.130 ; N/A      ; N/A     ; -1279.529           ;
++-----------------------------------------------------+----------+---------+----------+---------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -406,6 +402,9 @@ No synchronizer chains to report.
 +-------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 ; Pin         ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
 +-------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_HS      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_VS      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_R[0]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_R[1]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_R[2]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -430,11 +429,8 @@ No synchronizer chains to report.
 ; VGA_B[5]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[6]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[7]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_HS      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_VS      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_CLK     ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_SYNC_N  ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +-------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
 
@@ -455,6 +451,9 @@ No synchronizer chains to report.
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin         ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
+; VGA_HS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_VS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_R[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[2]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
@@ -479,11 +478,8 @@ No synchronizer chains to report.
 ; VGA_B[5]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[6]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[7]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
-; VGA_HS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_VS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
 ; VGA_CLK     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_SYNC_N  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -492,6 +488,9 @@ No synchronizer chains to report.
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin         ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
+; VGA_HS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
+; VGA_VS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_R[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_R[2]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
@@ -516,11 +515,8 @@ No synchronizer chains to report.
 ; VGA_B[5]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_B[6]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_B[7]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
-; VGA_HS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
-; VGA_VS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_CLK     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
 ; VGA_SYNC_N  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
-; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -529,6 +525,9 @@ No synchronizer chains to report.
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin         ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_HS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_VS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[2]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
@@ -553,11 +552,8 @@ No synchronizer chains to report.
 ; VGA_B[5]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[6]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[7]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_HS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_VS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
 ; VGA_CLK     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_SYNC_N  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -566,6 +562,9 @@ No synchronizer chains to report.
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin         ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
+; VGA_HS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_VS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[2]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
@@ -590,11 +589,8 @@ No synchronizer chains to report.
 ; VGA_B[5]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[6]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[7]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
-; VGA_HS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_VS      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
 ; VGA_CLK     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_SYNC_N  ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_BLANK_N ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
 +-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -603,17 +599,17 @@ No synchronizer chains to report.
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                         ; To Clock                                           ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
-; clk                                                ; clk                                                ; 744      ; 0        ; 0        ; 0        ;
+; clk                                                ; clk                                                ; 1164     ; 0        ; 0        ; 0        ;
 ; clk_fpga                                           ; clk_fpga                                           ; 399      ; 0        ; 0        ; 0        ;
 ; vga_controller:VgaController|clock50_25:c|state[0] ; clk_fpga                                           ; 1        ; 1        ; 0        ; 0        ;
 ; vga_controller:VgaController|h_count_reg[3]        ; clk_fpga                                           ; 27       ; 27       ; 0        ; 0        ;
-; clk_fpga                                           ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 10845    ; 0        ;
+; clk_fpga                                           ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 9954     ; 0        ;
 ; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 0        ; 21       ;
-; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 1593     ; 1593     ;
-; clk                                                ; vga_controller:VgaController|h_count_reg[3]        ; 180      ; 0        ; 180      ; 0        ;
-; clk_fpga                                           ; vga_controller:VgaController|h_count_reg[3]        ; 122834   ; 0        ; 122834   ; 0        ;
+; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 1476     ; 1476     ;
+; clk                                                ; vga_controller:VgaController|h_count_reg[3]        ; 2040     ; 0        ; 2040     ; 0        ;
+; clk_fpga                                           ; vga_controller:VgaController|h_count_reg[3]        ; 133246   ; 0        ; 133246   ; 0        ;
 ; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|h_count_reg[3]        ; 0        ; 154      ; 0        ; 154      ;
-; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|h_count_reg[3]        ; 8350     ; 8350     ; 8350     ; 8350     ;
+; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|h_count_reg[3]        ; 8372     ; 8372     ; 8372     ; 8372     ;
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -623,17 +619,17 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                         ; To Clock                                           ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
-; clk                                                ; clk                                                ; 744      ; 0        ; 0        ; 0        ;
+; clk                                                ; clk                                                ; 1164     ; 0        ; 0        ; 0        ;
 ; clk_fpga                                           ; clk_fpga                                           ; 399      ; 0        ; 0        ; 0        ;
 ; vga_controller:VgaController|clock50_25:c|state[0] ; clk_fpga                                           ; 1        ; 1        ; 0        ; 0        ;
 ; vga_controller:VgaController|h_count_reg[3]        ; clk_fpga                                           ; 27       ; 27       ; 0        ; 0        ;
-; clk_fpga                                           ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 10845    ; 0        ;
+; clk_fpga                                           ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 9954     ; 0        ;
 ; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 0        ; 21       ;
-; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 1593     ; 1593     ;
-; clk                                                ; vga_controller:VgaController|h_count_reg[3]        ; 180      ; 0        ; 180      ; 0        ;
-; clk_fpga                                           ; vga_controller:VgaController|h_count_reg[3]        ; 122834   ; 0        ; 122834   ; 0        ;
+; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 1476     ; 1476     ;
+; clk                                                ; vga_controller:VgaController|h_count_reg[3]        ; 2040     ; 0        ; 2040     ; 0        ;
+; clk_fpga                                           ; vga_controller:VgaController|h_count_reg[3]        ; 133246   ; 0        ; 133246   ; 0        ;
 ; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|h_count_reg[3]        ; 0        ; 154      ; 0        ; 154      ;
-; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|h_count_reg[3]        ; 8350     ; 8350     ; 8350     ; 8350     ;
+; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|h_count_reg[3]        ; 8372     ; 8372     ; 8372     ; 8372     ;
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -659,8 +655,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
 ; Unconstrained Input Port Paths  ; 23    ; 23   ;
-; Unconstrained Output Ports      ; 26    ; 26   ;
-; Unconstrained Output Port Paths ; 530   ; 530  ;
+; Unconstrained Output Ports      ; 28    ; 28   ;
+; Unconstrained Output Port Paths ; 539   ; 539  ;
 +---------------------------------+-------+------+
 
 
@@ -690,6 +686,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; VGA_BLANK_N ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -698,6 +695,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; VGA_B[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; VGA_CLK     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_G[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_G[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_G[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -733,6 +731,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; VGA_BLANK_N ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -741,6 +740,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; VGA_B[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; VGA_CLK     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_G[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_G[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_G[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -768,11 +768,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Nov 26 16:20:23 2024
+    Info: Processing started: Fri Nov 29 11:20:58 2024
 Info: Command: quartus_sta top_level -c top_level
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Warning (335093): The Timing Analyzer is analyzing 37 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
@@ -784,681 +784,681 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clk clk
     Info (332105): create_clock -period 1.000 -name vga_controller:VgaController|clock50_25:c|state[0] vga_controller:VgaController|clock50_25:c|state[0]
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: display|always1~16  from: datad  to: combout
-    Info (332098): Cell: display|always1~18  from: datab  to: combout
-    Info (332098): Cell: display|always1~22  from: dataf  to: combout
-    Info (332098): Cell: display|ascii[6]~2  from: datab  to: combout
-    Info (332098): Cell: display|ascii[6]~3  from: datac  to: combout
+    Info (332098): Cell: display|always1~20  from: datac  to: combout
+    Info (332098): Cell: display|always1~23  from: dataf  to: combout
+    Info (332098): Cell: display|always1~36  from: dataf  to: combout
+    Info (332098): Cell: display|ascii[6]~4  from: datab  to: combout
+    Info (332098): Cell: display|case_~12  from: datab  to: combout
+    Info (332098): Cell: display|case_~12  from: datac  to: combout
+    Info (332098): Cell: display|case_~6  from: dataa  to: combout
+    Info (332098): Cell: display|case_~6  from: datae  to: combout
     Info (332098): Cell: display|case_~9  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~103  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~111  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~112  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~100  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~101  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~105  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~106  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~107  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~110  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~114  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~115  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~117  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~126  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~128  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~12  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~130  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~131  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~120  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~124  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~129  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~130  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~131  from: dataa  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~132  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~143  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~144  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~145  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~146  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~148  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~149  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~150  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~168  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~17  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~181  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~188  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~190  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~19  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~1  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~200  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~204  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~209  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~210  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~211  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~212  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~215  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~220  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~221  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~222  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~223  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~133  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~135  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~137  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~14  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~159  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~160  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~163  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~165  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~170  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~173  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~17  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~183  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~187  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~197  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~198  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~200  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~20  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~214  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~219  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~21  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~220  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~221  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~222  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~228  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~229  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~230  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~229  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~230  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~233  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~237  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~239  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~245  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~248  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~249  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~252  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~242  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~243  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~248  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~254  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~255  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~256  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~260  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~261  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~263  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~264  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~257  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~258  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~259  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~25  from: datac  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~265  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~267  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~273  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~275  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~290  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~295  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~297  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~302  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~274  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~275  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~280  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~281  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~286  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~287  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~288  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~290  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~291  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~292  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~293  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~294  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~298  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~299  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~300  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~301  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~302  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~303  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~304  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~305  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~306  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~307  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~308  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~310  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~315  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~316  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~317  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~318  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~323  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~324  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~311  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~312  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~314  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~316  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~325  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~326  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~326  from: dataa  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~327  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~329  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~32  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~330  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~331  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~332  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~333  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~335  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~336  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~337  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~338  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~339  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~340  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~341  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~342  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~343  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~344  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~345  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~346  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~347  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~349  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~350  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~351  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~360  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~361  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~362  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~363  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~364  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~366  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~367  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~368  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~369  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~36  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~370  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~380  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~385  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~386  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~391  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~392  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~394  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~399  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~400  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~40  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~44  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~328  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~330  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~331  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~332  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~333  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~358  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~359  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~363  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~364  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~367  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~372  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~373  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~379  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~380  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~381  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~3  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~41  from: datad  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~45  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~46  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~49  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~53  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~54  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~56  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~5  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~61  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~67  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~71  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~77  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~80  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~81  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~84  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~92  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~94  from: datae  to: combout
-    Info (332098): Cell: display|value[0]~16  from: datac  to: combout
-    Info (332098): Cell: display|value[0]~18  from: datab  to: combout
-    Info (332098): Cell: display|value[0]~20  from: dataa  to: combout
-    Info (332098): Cell: display|value[0]~98  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~49  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~53  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~54  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~55  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~57  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~67  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~72  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~73  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~7  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~82  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~8  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~91  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~97  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~9  from: dataa  to: combout
+    Info (332098): Cell: display|value[0]~129  from: datae  to: combout
+    Info (332098): Cell: display|value[0]~14  from: dataf  to: combout
+    Info (332098): Cell: display|value[0]~19  from: dataa  to: combout
+    Info (332098): Cell: display|value[21]~16  from: datac  to: combout
+    Info (332098): Cell: display|value[21]~16  from: datad  to: combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -15.339
+Info (332146): Worst-case setup slack is -16.356
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -15.339            -490.617 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -9.668             -56.884 vga_controller:VgaController|clock50_25:c|state[0] 
-    Info (332119):    -3.660             -48.118 clk_fpga 
-    Info (332119):    -2.461            -100.450 clk 
-Info (332146): Worst-case hold slack is -6.030
+    Info (332119):   -16.356            -537.664 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -9.498             -55.414 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -3.955             -83.294 clk_fpga 
+    Info (332119):    -2.431            -192.775 clk 
+Info (332146): Worst-case hold slack is -6.667
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.030            -178.977 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -1.668             -13.397 clk_fpga 
-    Info (332119):     0.381               0.000 clk 
-    Info (332119):     0.947               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -6.667             -83.078 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.467              -7.195 clk_fpga 
+    Info (332119):     0.266               0.000 clk 
+    Info (332119):     0.709               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -4.302
+Info (332146): Worst-case minimum pulse width slack is -4.807
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.302           -1558.329 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.623            -109.405 clk 
-    Info (332119):    -0.394             -14.602 clk_fpga 
-    Info (332119):    -0.394              -3.074 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -4.807           -1253.807 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.527            -201.349 clk 
+    Info (332119):    -0.394             -14.709 clk_fpga 
+    Info (332119):    -0.394              -3.882 vga_controller:VgaController|clock50_25:c|state[0] 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: display|always1~16  from: datad  to: combout
-    Info (332098): Cell: display|always1~18  from: datab  to: combout
-    Info (332098): Cell: display|always1~22  from: dataf  to: combout
-    Info (332098): Cell: display|ascii[6]~2  from: datab  to: combout
-    Info (332098): Cell: display|ascii[6]~3  from: datac  to: combout
+    Info (332098): Cell: display|always1~20  from: datac  to: combout
+    Info (332098): Cell: display|always1~23  from: dataf  to: combout
+    Info (332098): Cell: display|always1~36  from: dataf  to: combout
+    Info (332098): Cell: display|ascii[6]~4  from: datab  to: combout
+    Info (332098): Cell: display|case_~12  from: datab  to: combout
+    Info (332098): Cell: display|case_~12  from: datac  to: combout
+    Info (332098): Cell: display|case_~6  from: dataa  to: combout
+    Info (332098): Cell: display|case_~6  from: datae  to: combout
     Info (332098): Cell: display|case_~9  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~103  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~111  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~112  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~100  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~101  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~105  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~106  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~107  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~110  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~114  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~115  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~117  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~126  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~128  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~12  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~130  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~131  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~120  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~124  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~129  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~130  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~131  from: dataa  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~132  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~143  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~144  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~145  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~146  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~148  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~149  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~150  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~168  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~17  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~181  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~188  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~190  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~19  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~1  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~200  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~204  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~209  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~210  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~211  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~212  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~215  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~220  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~221  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~222  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~223  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~133  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~135  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~137  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~14  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~159  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~160  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~163  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~165  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~170  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~173  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~17  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~183  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~187  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~197  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~198  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~200  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~20  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~214  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~219  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~21  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~220  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~221  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~222  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~228  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~229  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~230  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~229  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~230  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~233  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~237  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~239  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~245  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~248  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~249  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~252  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~242  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~243  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~248  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~254  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~255  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~256  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~260  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~261  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~263  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~264  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~257  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~258  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~259  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~25  from: datac  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~265  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~267  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~273  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~275  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~290  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~295  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~297  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~302  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~274  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~275  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~280  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~281  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~286  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~287  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~288  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~290  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~291  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~292  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~293  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~294  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~298  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~299  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~300  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~301  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~302  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~303  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~304  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~305  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~306  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~307  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~308  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~310  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~315  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~316  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~317  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~318  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~323  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~324  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~311  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~312  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~314  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~316  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~325  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~326  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~326  from: dataa  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~327  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~329  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~32  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~330  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~331  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~332  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~333  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~335  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~336  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~337  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~338  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~339  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~340  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~341  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~342  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~343  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~344  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~345  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~346  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~347  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~349  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~350  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~351  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~360  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~361  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~362  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~363  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~364  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~366  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~367  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~368  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~369  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~36  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~370  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~380  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~385  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~386  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~391  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~392  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~394  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~399  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~400  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~40  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~44  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~328  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~330  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~331  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~332  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~333  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~358  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~359  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~363  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~364  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~367  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~372  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~373  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~379  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~380  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~381  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~3  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~41  from: datad  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~45  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~46  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~49  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~53  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~54  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~56  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~5  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~61  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~67  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~71  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~77  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~80  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~81  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~84  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~92  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~94  from: datae  to: combout
-    Info (332098): Cell: display|value[0]~16  from: datac  to: combout
-    Info (332098): Cell: display|value[0]~18  from: datab  to: combout
-    Info (332098): Cell: display|value[0]~20  from: dataa  to: combout
-    Info (332098): Cell: display|value[0]~98  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~49  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~53  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~54  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~55  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~57  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~67  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~72  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~73  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~7  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~82  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~8  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~91  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~97  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~9  from: dataa  to: combout
+    Info (332098): Cell: display|value[0]~129  from: datae  to: combout
+    Info (332098): Cell: display|value[0]~14  from: dataf  to: combout
+    Info (332098): Cell: display|value[0]~19  from: dataa  to: combout
+    Info (332098): Cell: display|value[21]~16  from: datac  to: combout
+    Info (332098): Cell: display|value[21]~16  from: datad  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -15.150
+Info (332146): Worst-case setup slack is -16.070
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -15.150            -486.181 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -9.725             -57.129 vga_controller:VgaController|clock50_25:c|state[0] 
-    Info (332119):    -3.432             -45.749 clk_fpga 
-    Info (332119):    -2.461            -101.509 clk 
-Info (332146): Worst-case hold slack is -5.863
+    Info (332119):   -16.070            -526.251 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -9.539             -55.801 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -3.768             -79.763 clk_fpga 
+    Info (332119):    -2.481            -194.138 clk 
+Info (332146): Worst-case hold slack is -6.797
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.863            -174.539 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -1.828             -19.018 clk_fpga 
-    Info (332119):     0.378               0.000 clk 
-    Info (332119):     0.902               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -6.797             -87.130 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.671             -11.635 clk_fpga 
+    Info (332119):     0.249               0.000 clk 
+    Info (332119):     0.709               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -4.217
+Info (332146): Worst-case minimum pulse width slack is -4.901
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.217           -1542.678 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.635            -113.460 clk 
-    Info (332119):    -0.394             -13.422 clk_fpga 
-    Info (332119):    -0.394              -3.064 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -4.901           -1279.529 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.486            -192.335 clk 
+    Info (332119):    -0.394             -13.427 clk_fpga 
+    Info (332119):    -0.394              -3.849 vga_controller:VgaController|clock50_25:c|state[0] 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: display|always1~16  from: datad  to: combout
-    Info (332098): Cell: display|always1~18  from: datab  to: combout
-    Info (332098): Cell: display|always1~22  from: dataf  to: combout
-    Info (332098): Cell: display|ascii[6]~2  from: datab  to: combout
-    Info (332098): Cell: display|ascii[6]~3  from: datac  to: combout
+    Info (332098): Cell: display|always1~20  from: datac  to: combout
+    Info (332098): Cell: display|always1~23  from: dataf  to: combout
+    Info (332098): Cell: display|always1~36  from: dataf  to: combout
+    Info (332098): Cell: display|ascii[6]~4  from: datab  to: combout
+    Info (332098): Cell: display|case_~12  from: datab  to: combout
+    Info (332098): Cell: display|case_~12  from: datac  to: combout
+    Info (332098): Cell: display|case_~6  from: dataa  to: combout
+    Info (332098): Cell: display|case_~6  from: datae  to: combout
     Info (332098): Cell: display|case_~9  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~103  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~111  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~112  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~100  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~101  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~105  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~106  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~107  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~110  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~114  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~115  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~117  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~126  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~128  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~12  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~130  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~131  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~120  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~124  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~129  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~130  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~131  from: dataa  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~132  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~143  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~144  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~145  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~146  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~148  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~149  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~150  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~168  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~17  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~181  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~188  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~190  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~19  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~1  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~200  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~204  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~209  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~210  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~211  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~212  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~215  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~220  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~221  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~222  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~223  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~133  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~135  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~137  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~14  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~159  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~160  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~163  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~165  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~170  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~173  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~17  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~183  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~187  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~197  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~198  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~200  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~20  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~214  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~219  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~21  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~220  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~221  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~222  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~228  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~229  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~230  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~229  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~230  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~233  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~237  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~239  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~245  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~248  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~249  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~252  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~242  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~243  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~248  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~254  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~255  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~256  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~260  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~261  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~263  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~264  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~257  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~258  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~259  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~25  from: datac  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~265  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~267  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~273  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~275  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~290  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~295  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~297  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~302  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~274  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~275  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~280  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~281  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~286  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~287  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~288  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~290  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~291  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~292  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~293  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~294  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~298  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~299  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~300  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~301  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~302  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~303  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~304  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~305  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~306  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~307  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~308  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~310  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~315  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~316  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~317  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~318  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~323  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~324  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~311  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~312  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~314  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~316  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~325  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~326  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~326  from: dataa  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~327  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~329  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~32  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~330  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~331  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~332  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~333  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~335  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~336  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~337  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~338  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~339  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~340  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~341  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~342  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~343  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~344  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~345  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~346  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~347  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~349  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~350  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~351  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~360  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~361  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~362  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~363  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~364  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~366  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~367  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~368  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~369  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~36  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~370  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~380  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~385  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~386  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~391  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~392  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~394  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~399  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~400  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~40  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~44  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~328  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~330  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~331  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~332  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~333  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~358  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~359  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~363  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~364  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~367  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~372  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~373  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~379  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~380  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~381  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~3  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~41  from: datad  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~45  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~46  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~49  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~53  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~54  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~56  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~5  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~61  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~67  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~71  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~77  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~80  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~81  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~84  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~92  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~94  from: datae  to: combout
-    Info (332098): Cell: display|value[0]~16  from: datac  to: combout
-    Info (332098): Cell: display|value[0]~18  from: datab  to: combout
-    Info (332098): Cell: display|value[0]~20  from: dataa  to: combout
-    Info (332098): Cell: display|value[0]~98  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~49  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~53  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~54  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~55  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~57  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~67  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~72  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~73  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~7  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~82  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~8  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~91  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~97  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~9  from: dataa  to: combout
+    Info (332098): Cell: display|value[0]~129  from: datae  to: combout
+    Info (332098): Cell: display|value[0]~14  from: dataf  to: combout
+    Info (332098): Cell: display|value[0]~19  from: dataa  to: combout
+    Info (332098): Cell: display|value[21]~16  from: datac  to: combout
+    Info (332098): Cell: display|value[21]~16  from: datad  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.171
+Info (332146): Worst-case setup slack is -10.239
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.171            -287.346 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -5.423             -32.262 vga_controller:VgaController|clock50_25:c|state[0] 
-    Info (332119):    -2.631             -25.780 clk_fpga 
-    Info (332119):    -1.095             -27.409 clk 
-Info (332146): Worst-case hold slack is -3.519
+    Info (332119):   -10.239            -329.680 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -5.380             -30.746 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.505             -46.212 clk_fpga 
+    Info (332119):    -1.270             -54.170 clk 
+Info (332146): Worst-case hold slack is -4.002
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.519            -102.758 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.639              -4.904 clk_fpga 
-    Info (332119):     0.200               0.000 clk 
-    Info (332119):     0.491               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -4.002             -44.374 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.160              -2.109 clk_fpga 
+    Info (332119):     0.156               0.000 clk 
+    Info (332119):     0.364               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -2.409
+Info (332146): Worst-case minimum pulse width slack is -2.634
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.409            -754.633 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.776            -130.483 clk 
-    Info (332119):    -0.387             -10.102 clk_fpga 
-    Info (332119):     0.156               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.634            -553.072 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.642            -206.227 clk 
+    Info (332119):    -0.390             -10.218 clk_fpga 
+    Info (332119):    -0.036              -0.070 vga_controller:VgaController|clock50_25:c|state[0] 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: display|always1~16  from: datad  to: combout
-    Info (332098): Cell: display|always1~18  from: datab  to: combout
-    Info (332098): Cell: display|always1~22  from: dataf  to: combout
-    Info (332098): Cell: display|ascii[6]~2  from: datab  to: combout
-    Info (332098): Cell: display|ascii[6]~3  from: datac  to: combout
+    Info (332098): Cell: display|always1~20  from: datac  to: combout
+    Info (332098): Cell: display|always1~23  from: dataf  to: combout
+    Info (332098): Cell: display|always1~36  from: dataf  to: combout
+    Info (332098): Cell: display|ascii[6]~4  from: datab  to: combout
+    Info (332098): Cell: display|case_~12  from: datab  to: combout
+    Info (332098): Cell: display|case_~12  from: datac  to: combout
+    Info (332098): Cell: display|case_~6  from: dataa  to: combout
+    Info (332098): Cell: display|case_~6  from: datae  to: combout
     Info (332098): Cell: display|case_~9  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~103  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~111  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~112  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~100  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~101  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~105  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~106  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~107  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~110  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~114  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~115  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~117  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~126  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~128  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~12  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~130  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~131  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~120  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~124  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~129  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~130  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~131  from: dataa  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~132  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~143  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~144  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~145  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~146  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~148  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~149  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~150  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~168  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~17  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~181  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~188  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~190  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~19  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~1  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~200  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~204  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~209  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~210  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~211  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~212  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~215  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~220  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~221  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~222  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~223  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~133  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~135  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~137  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~14  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~159  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~160  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~163  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~165  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~170  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~173  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~17  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~183  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~187  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~197  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~198  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~200  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~20  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~214  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~219  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~21  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~220  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~221  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~222  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~228  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~229  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~230  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~229  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~230  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~233  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~237  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~239  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~245  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~248  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~249  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~252  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~242  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~243  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~248  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~254  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~255  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~256  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~260  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~261  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~263  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~264  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~257  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~258  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~259  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~25  from: datac  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~265  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~267  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~273  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~275  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~290  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~295  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~297  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~302  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~274  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~275  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~280  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~281  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~286  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~287  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~288  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~290  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~291  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~292  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~293  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~294  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~298  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~299  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~300  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~301  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~302  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~303  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~304  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~305  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~306  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~307  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~308  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~310  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~315  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~316  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~317  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~318  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~323  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~324  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~311  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~312  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~314  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~316  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~325  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~326  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~326  from: dataa  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~327  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~329  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~32  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~330  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~331  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~332  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~333  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~335  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~336  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~337  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~338  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~339  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~340  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~341  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~342  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~343  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~344  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~345  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~346  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~347  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~349  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~350  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~351  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~360  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~361  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~362  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~363  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~364  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~366  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~367  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~368  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~369  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~36  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~370  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~380  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~385  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~386  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~391  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~392  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~394  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~399  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~400  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~40  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~44  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~328  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~330  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~331  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~332  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~333  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~358  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~359  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~363  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~364  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~367  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~372  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~373  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~379  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~380  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~381  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~3  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~41  from: datad  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~45  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~46  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~49  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~53  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~54  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~56  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~5  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~61  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~67  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~71  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~77  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~80  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~81  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~84  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~92  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~94  from: datae  to: combout
-    Info (332098): Cell: display|value[0]~16  from: datac  to: combout
-    Info (332098): Cell: display|value[0]~18  from: datab  to: combout
-    Info (332098): Cell: display|value[0]~20  from: dataa  to: combout
-    Info (332098): Cell: display|value[0]~98  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~49  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~53  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~54  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~55  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~57  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~67  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~72  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~73  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~7  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~82  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~8  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~91  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~97  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~9  from: dataa  to: combout
+    Info (332098): Cell: display|value[0]~129  from: datae  to: combout
+    Info (332098): Cell: display|value[0]~14  from: dataf  to: combout
+    Info (332098): Cell: display|value[0]~19  from: dataa  to: combout
+    Info (332098): Cell: display|value[21]~16  from: datac  to: combout
+    Info (332098): Cell: display|value[21]~16  from: datad  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -8.260
+Info (332146): Worst-case setup slack is -9.104
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.260            -259.119 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -4.984             -29.521 vga_controller:VgaController|clock50_25:c|state[0] 
-    Info (332119):    -2.135             -20.590 clk_fpga 
-    Info (332119):    -0.923             -21.127 clk 
-Info (332146): Worst-case hold slack is -3.169
+    Info (332119):    -9.104            -293.553 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -4.963             -28.518 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.037             -38.231 clk_fpga 
+    Info (332119):    -1.013             -42.450 clk 
+Info (332146): Worst-case hold slack is -3.694
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.169             -92.821 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.755              -6.811 clk_fpga 
-    Info (332119):     0.190               0.000 clk 
-    Info (332119):     0.434               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -3.694             -40.146 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.278              -4.659 clk_fpga 
+    Info (332119):     0.142               0.000 clk 
+    Info (332119):     0.335               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -2.090
+Info (332146): Worst-case minimum pulse width slack is -2.328
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.090            -653.702 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.816            -140.334 clk 
-    Info (332119):    -0.427             -12.305 clk_fpga 
-    Info (332119):     0.157               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.328            -480.538 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.662            -216.403 clk 
+    Info (332119):    -0.429             -12.398 clk_fpga 
+    Info (332119):    -0.003              -0.004 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5319 megabytes
-    Info: Processing ended: Tue Nov 26 16:20:29 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 5253 megabytes
+    Info: Processing ended: Fri Nov 29 11:21:01 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

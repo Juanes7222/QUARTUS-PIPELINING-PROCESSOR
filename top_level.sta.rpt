@@ -1,5 +1,5 @@
 Timing Analyzer report for top_level
-Fri Nov 29 11:21:01 2024
+Wed Dec  4 17:45:20 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -100,22 +100,22 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.99        ;
+; Average used               ; 1.94        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   9.4%      ;
-;     Processor 3            ;   9.1%      ;
-;     Processor 4            ;   9.1%      ;
-;     Processor 5            ;   9.0%      ;
-;     Processor 6            ;   9.0%      ;
-;     Processor 7            ;   9.0%      ;
-;     Processor 8            ;   9.0%      ;
-;     Processor 9            ;   9.0%      ;
-;     Processor 10           ;   9.0%      ;
-;     Processor 11           ;   8.9%      ;
-;     Processor 12           ;   8.9%      ;
+;     Processor 2            ;   8.9%      ;
+;     Processor 3            ;   8.7%      ;
+;     Processor 4            ;   8.6%      ;
+;     Processor 5            ;   8.4%      ;
+;     Processor 6            ;   8.4%      ;
+;     Processor 7            ;   8.4%      ;
+;     Processor 8            ;   8.4%      ;
+;     Processor 9            ;   8.4%      ;
+;     Processor 10           ;   8.4%      ;
+;     Processor 11           ;   8.4%      ;
+;     Processor 12           ;   8.4%      ;
 +----------------------------+-------------+
 
 
@@ -136,10 +136,10 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+----------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                         ; Note ;
 +------------+-----------------+----------------------------------------------------+------+
-; 34.43 MHz  ; 34.43 MHz       ; vga_controller:VgaController|h_count_reg[3]        ;      ;
-; 201.82 MHz ; 201.82 MHz      ; clk_fpga                                           ;      ;
-; 291.46 MHz ; 291.46 MHz      ; clk                                                ;      ;
-; 352.36 MHz ; 352.36 MHz      ; vga_controller:VgaController|clock50_25:c|state[0] ;      ;
+; 38.46 MHz  ; 38.46 MHz       ; vga_controller:VgaController|h_count_reg[3]        ;      ;
+; 302.85 MHz ; 302.85 MHz      ; clk                                                ;      ;
+; 409.33 MHz ; 409.33 MHz      ; vga_controller:VgaController|clock50_25:c|state[0] ;      ;
+; 470.15 MHz ; 470.15 MHz      ; clk_fpga                                           ;      ;
 +------------+-----------------+----------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -155,10 +155,10 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------+---------+---------------+
 ; Clock                                              ; Slack   ; End Point TNS ;
 +----------------------------------------------------+---------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -16.356 ; -537.664      ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -9.498  ; -55.414       ;
-; clk_fpga                                           ; -3.955  ; -83.294       ;
-; clk                                                ; -2.431  ; -192.775      ;
+; vga_controller:VgaController|h_count_reg[3]        ; -14.759 ; -506.511      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -9.183  ; -192.321      ;
+; clk_fpga                                           ; -2.606  ; -37.216       ;
+; clk                                                ; -2.302  ; -157.100      ;
 +----------------------------------------------------+---------+---------------+
 
 
@@ -167,10 +167,10 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -6.667 ; -83.078       ;
-; clk_fpga                                           ; -0.467 ; -7.195        ;
-; clk                                                ; 0.266  ; 0.000         ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.709  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -5.527 ; -118.182      ;
+; clk_fpga                                           ; -1.934 ; -9.834        ;
+; clk                                                ; 0.380  ; 0.000         ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.680  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -191,10 +191,10 @@ No paths to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -4.807 ; -1253.807     ;
-; clk                                                ; -0.527 ; -201.349      ;
-; clk_fpga                                           ; -0.394 ; -14.709       ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -0.394 ; -3.882        ;
+; vga_controller:VgaController|h_count_reg[3]        ; -3.928 ; -1351.767     ;
+; clk                                                ; -0.696 ; -244.462      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -0.394 ; -15.369       ;
+; clk_fpga                                           ; -0.394 ; -14.659       ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -209,10 +209,10 @@ No synchronizer chains to report.
 +------------+-----------------+----------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                         ; Note ;
 +------------+-----------------+----------------------------------------------------+------+
-; 35.38 MHz  ; 35.38 MHz       ; vga_controller:VgaController|h_count_reg[3]        ;      ;
-; 209.73 MHz ; 209.73 MHz      ; clk_fpga                                           ;      ;
-; 287.27 MHz ; 287.27 MHz      ; clk                                                ;      ;
-; 360.49 MHz ; 360.49 MHz      ; vga_controller:VgaController|clock50_25:c|state[0] ;      ;
+; 39.02 MHz  ; 39.02 MHz       ; vga_controller:VgaController|h_count_reg[3]        ;      ;
+; 295.07 MHz ; 295.07 MHz      ; clk                                                ;      ;
+; 410.0 MHz  ; 410.0 MHz       ; vga_controller:VgaController|clock50_25:c|state[0] ;      ;
+; 481.93 MHz ; 481.93 MHz      ; clk_fpga                                           ;      ;
 +------------+-----------------+----------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -222,10 +222,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------+---------+---------------+
 ; Clock                                              ; Slack   ; End Point TNS ;
 +----------------------------------------------------+---------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -16.070 ; -526.251      ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -9.539  ; -55.801       ;
-; clk_fpga                                           ; -3.768  ; -79.763       ;
-; clk                                                ; -2.481  ; -194.138      ;
+; vga_controller:VgaController|h_count_reg[3]        ; -14.479 ; -496.505      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -9.410  ; -190.989      ;
+; clk                                                ; -2.389  ; -159.865      ;
+; clk_fpga                                           ; -2.259  ; -32.105       ;
 +----------------------------------------------------+---------+---------------+
 
 
@@ -234,10 +234,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -6.797 ; -87.130       ;
-; clk_fpga                                           ; -0.671 ; -11.635       ;
-; clk                                                ; 0.249  ; 0.000         ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.709  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -5.555 ; -118.997      ;
+; clk_fpga                                           ; -2.117 ; -10.904       ;
+; clk                                                ; 0.370  ; 0.000         ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.681  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -258,10 +258,10 @@ No paths to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -4.901 ; -1279.529     ;
-; clk                                                ; -0.486 ; -192.335      ;
-; clk_fpga                                           ; -0.394 ; -13.427       ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -0.394 ; -3.849        ;
+; vga_controller:VgaController|h_count_reg[3]        ; -3.955 ; -1370.564     ;
+; clk                                                ; -0.690 ; -248.283      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -0.394 ; -15.215       ;
+; clk_fpga                                           ; -0.394 ; -13.295       ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -271,16 +271,16 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                                          ;
-+----------------------------------------------------+---------+---------------+
-; Clock                                              ; Slack   ; End Point TNS ;
-+----------------------------------------------------+---------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -10.239 ; -329.680      ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -5.380  ; -30.746       ;
-; clk_fpga                                           ; -2.505  ; -46.212       ;
-; clk                                                ; -1.270  ; -54.170       ;
-+----------------------------------------------------+---------+---------------+
++-----------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary                                         ;
++----------------------------------------------------+--------+---------------+
+; Clock                                              ; Slack  ; End Point TNS ;
++----------------------------------------------------+--------+---------------+
+; vga_controller:VgaController|h_count_reg[3]        ; -9.063 ; -306.410      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -5.094 ; -111.480      ;
+; clk_fpga                                           ; -2.025 ; -28.380       ;
+; clk                                                ; -0.888 ; -37.749       ;
++----------------------------------------------------+--------+---------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -288,10 +288,10 @@ No synchronizer chains to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -4.002 ; -44.374       ;
-; clk_fpga                                           ; -0.160 ; -2.109        ;
-; clk                                                ; 0.156  ; 0.000         ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.364  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -3.203 ; -66.985       ;
+; clk_fpga                                           ; -0.896 ; -4.261        ;
+; clk                                                ; 0.202  ; 0.000         ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.341  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -312,10 +312,10 @@ No paths to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -2.634 ; -553.072      ;
-; clk                                                ; -0.642 ; -206.227      ;
-; clk_fpga                                           ; -0.390 ; -10.218       ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -0.036 ; -0.070        ;
+; vga_controller:VgaController|h_count_reg[3]        ; -2.118 ; -617.475      ;
+; clk                                                ; -0.839 ; -285.463      ;
+; clk_fpga                                           ; -0.391 ; -10.219       ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.023  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -330,10 +330,10 @@ No synchronizer chains to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -9.104 ; -293.553      ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -4.963 ; -28.518       ;
-; clk_fpga                                           ; -2.037 ; -38.231       ;
-; clk                                                ; -1.013 ; -42.450       ;
+; vga_controller:VgaController|h_count_reg[3]        ; -8.131 ; -274.921      ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; -4.721 ; -102.507      ;
+; clk_fpga                                           ; -1.604 ; -22.059       ;
+; clk                                                ; -0.780 ; -30.560       ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -342,10 +342,10 @@ No synchronizer chains to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -3.694 ; -40.146       ;
-; clk_fpga                                           ; -0.278 ; -4.659        ;
-; clk                                                ; 0.142  ; 0.000         ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; 0.335  ; 0.000         ;
+; vga_controller:VgaController|h_count_reg[3]        ; -2.924 ; -60.652       ;
+; clk_fpga                                           ; -0.938 ; -4.636        ;
+; clk                                                ; 0.188  ; 0.000         ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.308  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -366,10 +366,10 @@ No paths to report.
 +----------------------------------------------------+--------+---------------+
 ; Clock                                              ; Slack  ; End Point TNS ;
 +----------------------------------------------------+--------+---------------+
-; vga_controller:VgaController|h_count_reg[3]        ; -2.328 ; -480.538      ;
-; clk                                                ; -0.662 ; -216.403      ;
-; clk_fpga                                           ; -0.429 ; -12.398       ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; -0.003 ; -0.004        ;
+; vga_controller:VgaController|h_count_reg[3]        ; -1.878 ; -540.309      ;
+; clk                                                ; -0.857 ; -295.495      ;
+; clk_fpga                                           ; -0.429 ; -12.352       ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; 0.047  ; 0.000         ;
 +----------------------------------------------------+--------+---------------+
 
 
@@ -379,22 +379,22 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                 ;
-+-----------------------------------------------------+----------+---------+----------+---------+---------------------+
-; Clock                                               ; Setup    ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
-+-----------------------------------------------------+----------+---------+----------+---------+---------------------+
-; Worst-case Slack                                    ; -16.356  ; -6.797  ; N/A      ; N/A     ; -4.901              ;
-;  clk                                                ; -2.481   ; 0.142   ; N/A      ; N/A     ; -0.662              ;
-;  clk_fpga                                           ; -3.955   ; -0.671  ; N/A      ; N/A     ; -0.429              ;
-;  vga_controller:VgaController|clock50_25:c|state[0] ; -9.539   ; 0.335   ; N/A      ; N/A     ; -0.394              ;
-;  vga_controller:VgaController|h_count_reg[3]        ; -16.356  ; -6.797  ; N/A      ; N/A     ; -4.901              ;
-; Design-wide TNS                                     ; -869.147 ; -98.765 ; 0.0      ; 0.0     ; -1489.14            ;
-;  clk                                                ; -194.138 ; 0.000   ; N/A      ; N/A     ; -216.403            ;
-;  clk_fpga                                           ; -83.294  ; -11.635 ; N/A      ; N/A     ; -14.709             ;
-;  vga_controller:VgaController|clock50_25:c|state[0] ; -55.801  ; 0.000   ; N/A      ; N/A     ; -3.882              ;
-;  vga_controller:VgaController|h_count_reg[3]        ; -537.664 ; -87.130 ; N/A      ; N/A     ; -1279.529           ;
-+-----------------------------------------------------+----------+---------+----------+---------+---------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                  ;
++-----------------------------------------------------+----------+----------+----------+---------+---------------------+
+; Clock                                               ; Setup    ; Hold     ; Recovery ; Removal ; Minimum Pulse Width ;
++-----------------------------------------------------+----------+----------+----------+---------+---------------------+
+; Worst-case Slack                                    ; -14.759  ; -5.555   ; N/A      ; N/A     ; -3.955              ;
+;  clk                                                ; -2.389   ; 0.188    ; N/A      ; N/A     ; -0.857              ;
+;  clk_fpga                                           ; -2.606   ; -2.117   ; N/A      ; N/A     ; -0.429              ;
+;  vga_controller:VgaController|clock50_25:c|state[0] ; -9.410   ; 0.308    ; N/A      ; N/A     ; -0.394              ;
+;  vga_controller:VgaController|h_count_reg[3]        ; -14.759  ; -5.555   ; N/A      ; N/A     ; -3.955              ;
+; Design-wide TNS                                     ; -893.148 ; -129.901 ; 0.0      ; 0.0     ; -1647.357           ;
+;  clk                                                ; -159.865 ; 0.000    ; N/A      ; N/A     ; -295.495            ;
+;  clk_fpga                                           ; -37.216  ; -10.904  ; N/A      ; N/A     ; -14.659             ;
+;  vga_controller:VgaController|clock50_25:c|state[0] ; -192.321 ; 0.000    ; N/A      ; N/A     ; -15.369             ;
+;  vga_controller:VgaController|h_count_reg[3]        ; -506.511 ; -118.997 ; N/A      ; N/A     ; -1370.564           ;
++-----------------------------------------------------+----------+----------+----------+---------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -599,17 +599,16 @@ No synchronizer chains to report.
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                         ; To Clock                                           ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
-; clk                                                ; clk                                                ; 1164     ; 0        ; 0        ; 0        ;
-; clk_fpga                                           ; clk_fpga                                           ; 399      ; 0        ; 0        ; 0        ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; clk_fpga                                           ; 1        ; 1        ; 0        ; 0        ;
-; vga_controller:VgaController|h_count_reg[3]        ; clk_fpga                                           ; 27       ; 27       ; 0        ; 0        ;
-; clk_fpga                                           ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 9954     ; 0        ;
+; clk                                                ; clk                                                ; 1120     ; 0        ; 0        ; 0        ;
+; clk_fpga                                           ; clk_fpga                                           ; 16       ; 0        ; 0        ; 0        ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; clk_fpga                                           ; 1        ; 21       ; 0        ; 0        ;
+; clk_fpga                                           ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 10247    ; 0        ;
 ; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 0        ; 21       ;
 ; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 1476     ; 1476     ;
 ; clk                                                ; vga_controller:VgaController|h_count_reg[3]        ; 2040     ; 0        ; 2040     ; 0        ;
-; clk_fpga                                           ; vga_controller:VgaController|h_count_reg[3]        ; 133246   ; 0        ; 133246   ; 0        ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|h_count_reg[3]        ; 0        ; 154      ; 0        ; 154      ;
-; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|h_count_reg[3]        ; 8372     ; 8372     ; 8372     ; 8372     ;
+; clk_fpga                                           ; vga_controller:VgaController|h_count_reg[3]        ; 117588   ; 0        ; 117588   ; 0        ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|h_count_reg[3]        ; 0        ; 158      ; 0        ; 158      ;
+; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|h_count_reg[3]        ; 7590     ; 7590     ; 7590     ; 7590     ;
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -619,17 +618,16 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                         ; To Clock                                           ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
-; clk                                                ; clk                                                ; 1164     ; 0        ; 0        ; 0        ;
-; clk_fpga                                           ; clk_fpga                                           ; 399      ; 0        ; 0        ; 0        ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; clk_fpga                                           ; 1        ; 1        ; 0        ; 0        ;
-; vga_controller:VgaController|h_count_reg[3]        ; clk_fpga                                           ; 27       ; 27       ; 0        ; 0        ;
-; clk_fpga                                           ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 9954     ; 0        ;
+; clk                                                ; clk                                                ; 1120     ; 0        ; 0        ; 0        ;
+; clk_fpga                                           ; clk_fpga                                           ; 16       ; 0        ; 0        ; 0        ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; clk_fpga                                           ; 1        ; 21       ; 0        ; 0        ;
+; clk_fpga                                           ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 10247    ; 0        ;
 ; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 0        ; 21       ;
 ; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|clock50_25:c|state[0] ; 0        ; 0        ; 1476     ; 1476     ;
 ; clk                                                ; vga_controller:VgaController|h_count_reg[3]        ; 2040     ; 0        ; 2040     ; 0        ;
-; clk_fpga                                           ; vga_controller:VgaController|h_count_reg[3]        ; 133246   ; 0        ; 133246   ; 0        ;
-; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|h_count_reg[3]        ; 0        ; 154      ; 0        ; 154      ;
-; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|h_count_reg[3]        ; 8372     ; 8372     ; 8372     ; 8372     ;
+; clk_fpga                                           ; vga_controller:VgaController|h_count_reg[3]        ; 117588   ; 0        ; 117588   ; 0        ;
+; vga_controller:VgaController|clock50_25:c|state[0] ; vga_controller:VgaController|h_count_reg[3]        ; 0        ; 158      ; 0        ; 158      ;
+; vga_controller:VgaController|h_count_reg[3]        ; vga_controller:VgaController|h_count_reg[3]        ; 7590     ; 7590     ; 7590     ; 7590     ;
 +----------------------------------------------------+----------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -654,7 +652,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 23    ; 23   ;
+; Unconstrained Input Port Paths  ; 43    ; 43   ;
 ; Unconstrained Output Ports      ; 28    ; 28   ;
 ; Unconstrained Output Port Paths ; 539   ; 539  ;
 +---------------------------------+-------+------+
@@ -768,7 +766,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Nov 29 11:20:58 2024
+    Info: Processing started: Wed Dec  4 17:45:17 2024
 Info: Command: quartus_sta top_level -c top_level
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -780,685 +778,669 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'top
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clk_fpga clk_fpga
+    Info (332105): create_clock -period 1.000 -name vga_controller:VgaController|clock50_25:c|state[0] vga_controller:VgaController|clock50_25:c|state[0]
     Info (332105): create_clock -period 1.000 -name vga_controller:VgaController|h_count_reg[3] vga_controller:VgaController|h_count_reg[3]
     Info (332105): create_clock -period 1.000 -name clk clk
-    Info (332105): create_clock -period 1.000 -name vga_controller:VgaController|clock50_25:c|state[0] vga_controller:VgaController|clock50_25:c|state[0]
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: display|always1~20  from: datac  to: combout
-    Info (332098): Cell: display|always1~23  from: dataf  to: combout
-    Info (332098): Cell: display|always1~36  from: dataf  to: combout
+    Info (332098): Cell: display|always1~20  from: datad  to: combout
+    Info (332098): Cell: display|always1~23  from: datab  to: combout
+    Info (332098): Cell: display|always1~36  from: datae  to: combout
     Info (332098): Cell: display|ascii[6]~4  from: datab  to: combout
-    Info (332098): Cell: display|case_~12  from: datab  to: combout
-    Info (332098): Cell: display|case_~12  from: datac  to: combout
-    Info (332098): Cell: display|case_~6  from: dataa  to: combout
-    Info (332098): Cell: display|case_~6  from: datae  to: combout
+    Info (332098): Cell: display|case_~6  from: datac  to: combout
+    Info (332098): Cell: display|case_~6  from: dataf  to: combout
     Info (332098): Cell: display|case_~9  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~100  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~101  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~105  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~106  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~107  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~110  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~114  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~115  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~117  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~120  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~124  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~129  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~130  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~131  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~132  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~133  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~135  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~137  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~101  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~102  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~106  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~116  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~11  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~122  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~124  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~125  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~13  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~147  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~148  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~14  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~159  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~160  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~163  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~165  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~170  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~173  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~17  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~183  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~187  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~197  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~198  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~200  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~20  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~214  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~219  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~21  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~220  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~221  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~222  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~228  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~229  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~230  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~155  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~162  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~165  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~175  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~181  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~186  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~188  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~18  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~194  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~195  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~1  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~200  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~201  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~202  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~203  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~209  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~210  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~211  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~214  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~218  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~222  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~228  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~229  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~231  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~233  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~237  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~242  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~243  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~248  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~254  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~255  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~256  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~245  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~250  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~251  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~257  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~258  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~259  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~25  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~265  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~274  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~275  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~280  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~281  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~286  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~287  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~288  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~258  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~259  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~260  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~261  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~262  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~265  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~266  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~267  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~268  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~269  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~270  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~271  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~272  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~273  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~274  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~275  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~277  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~279  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~280  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~284  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~285  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~286  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~287  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~288  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~289  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~290  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~291  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~292  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~293  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~294  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~298  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~299  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~300  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~301  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~302  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~303  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~304  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~305  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~306  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~293  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~294  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~295  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~297  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~29  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~306  from: datac  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~307  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~308  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~309  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~310  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~311  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~312  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~314  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~316  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~325  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~326  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~327  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~328  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~330  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~331  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~332  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~333  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~358  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~359  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~363  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~364  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~367  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~372  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~373  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~379  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~380  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~381  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~3  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~41  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~45  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~49  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~53  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~312  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~313  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~314  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~317  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~318  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~319  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~332  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~333  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~335  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~338  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~339  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~33  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~340  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~342  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~343  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~345  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~346  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~348  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~356  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~357  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~367  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~368  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~375  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~39  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~43  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~44  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~51  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~54  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~55  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~57  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~67  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~72  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~73  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~7  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~82  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~8  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~91  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~97  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~9  from: dataa  to: combout
-    Info (332098): Cell: display|value[0]~129  from: datae  to: combout
-    Info (332098): Cell: display|value[0]~14  from: dataf  to: combout
-    Info (332098): Cell: display|value[0]~19  from: dataa  to: combout
-    Info (332098): Cell: display|value[21]~16  from: datac  to: combout
-    Info (332098): Cell: display|value[21]~16  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~59  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~5  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~60  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~69  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~6  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~74  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~78  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~84  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~88  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~8  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~92  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~96  from: datad  to: combout
+    Info (332098): Cell: display|value[0]~130  from: dataa  to: combout
+    Info (332098): Cell: display|value[0]~15  from: datad  to: combout
+    Info (332098): Cell: display|value[0]~20  from: dataf  to: combout
+    Info (332098): Cell: display|value[31]~17  from: datab  to: combout
+    Info (332098): Cell: display|value[31]~17  from: datae  to: combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -16.356
+Info (332146): Worst-case setup slack is -14.759
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -16.356            -537.664 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -9.498             -55.414 vga_controller:VgaController|clock50_25:c|state[0] 
-    Info (332119):    -3.955             -83.294 clk_fpga 
-    Info (332119):    -2.431            -192.775 clk 
-Info (332146): Worst-case hold slack is -6.667
+    Info (332119):   -14.759            -506.511 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -9.183            -192.321 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.606             -37.216 clk_fpga 
+    Info (332119):    -2.302            -157.100 clk 
+Info (332146): Worst-case hold slack is -5.527
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.667             -83.078 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.467              -7.195 clk_fpga 
-    Info (332119):     0.266               0.000 clk 
-    Info (332119):     0.709               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -5.527            -118.182 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -1.934              -9.834 clk_fpga 
+    Info (332119):     0.380               0.000 clk 
+    Info (332119):     0.680               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -4.807
+Info (332146): Worst-case minimum pulse width slack is -3.928
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.807           -1253.807 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.527            -201.349 clk 
-    Info (332119):    -0.394             -14.709 clk_fpga 
-    Info (332119):    -0.394              -3.882 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -3.928           -1351.767 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.696            -244.462 clk 
+    Info (332119):    -0.394             -15.369 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -0.394             -14.659 clk_fpga 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: display|always1~20  from: datac  to: combout
-    Info (332098): Cell: display|always1~23  from: dataf  to: combout
-    Info (332098): Cell: display|always1~36  from: dataf  to: combout
+    Info (332098): Cell: display|always1~20  from: datad  to: combout
+    Info (332098): Cell: display|always1~23  from: datab  to: combout
+    Info (332098): Cell: display|always1~36  from: datae  to: combout
     Info (332098): Cell: display|ascii[6]~4  from: datab  to: combout
-    Info (332098): Cell: display|case_~12  from: datab  to: combout
-    Info (332098): Cell: display|case_~12  from: datac  to: combout
-    Info (332098): Cell: display|case_~6  from: dataa  to: combout
-    Info (332098): Cell: display|case_~6  from: datae  to: combout
+    Info (332098): Cell: display|case_~6  from: datac  to: combout
+    Info (332098): Cell: display|case_~6  from: dataf  to: combout
     Info (332098): Cell: display|case_~9  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~100  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~101  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~105  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~106  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~107  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~110  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~114  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~115  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~117  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~120  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~124  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~129  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~130  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~131  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~132  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~133  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~135  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~137  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~101  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~102  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~106  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~116  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~11  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~122  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~124  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~125  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~13  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~147  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~148  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~14  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~159  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~160  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~163  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~165  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~170  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~173  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~17  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~183  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~187  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~197  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~198  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~200  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~20  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~214  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~219  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~21  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~220  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~221  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~222  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~228  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~229  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~230  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~155  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~162  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~165  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~175  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~181  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~186  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~188  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~18  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~194  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~195  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~1  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~200  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~201  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~202  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~203  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~209  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~210  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~211  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~214  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~218  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~222  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~228  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~229  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~231  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~233  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~237  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~242  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~243  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~248  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~254  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~255  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~256  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~245  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~250  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~251  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~257  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~258  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~259  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~25  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~265  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~274  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~275  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~280  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~281  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~286  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~287  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~288  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~258  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~259  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~260  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~261  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~262  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~265  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~266  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~267  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~268  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~269  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~270  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~271  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~272  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~273  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~274  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~275  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~277  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~279  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~280  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~284  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~285  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~286  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~287  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~288  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~289  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~290  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~291  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~292  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~293  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~294  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~298  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~299  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~300  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~301  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~302  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~303  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~304  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~305  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~306  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~293  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~294  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~295  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~297  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~29  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~306  from: datac  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~307  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~308  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~309  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~310  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~311  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~312  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~314  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~316  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~325  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~326  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~327  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~328  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~330  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~331  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~332  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~333  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~358  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~359  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~363  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~364  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~367  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~372  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~373  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~379  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~380  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~381  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~3  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~41  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~45  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~49  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~53  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~312  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~313  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~314  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~317  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~318  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~319  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~332  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~333  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~335  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~338  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~339  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~33  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~340  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~342  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~343  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~345  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~346  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~348  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~356  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~357  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~367  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~368  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~375  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~39  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~43  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~44  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~51  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~54  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~55  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~57  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~67  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~72  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~73  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~7  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~82  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~8  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~91  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~97  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~9  from: dataa  to: combout
-    Info (332098): Cell: display|value[0]~129  from: datae  to: combout
-    Info (332098): Cell: display|value[0]~14  from: dataf  to: combout
-    Info (332098): Cell: display|value[0]~19  from: dataa  to: combout
-    Info (332098): Cell: display|value[21]~16  from: datac  to: combout
-    Info (332098): Cell: display|value[21]~16  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~59  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~5  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~60  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~69  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~6  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~74  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~78  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~84  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~88  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~8  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~92  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~96  from: datad  to: combout
+    Info (332098): Cell: display|value[0]~130  from: dataa  to: combout
+    Info (332098): Cell: display|value[0]~15  from: datad  to: combout
+    Info (332098): Cell: display|value[0]~20  from: dataf  to: combout
+    Info (332098): Cell: display|value[31]~17  from: datab  to: combout
+    Info (332098): Cell: display|value[31]~17  from: datae  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -16.070
+Info (332146): Worst-case setup slack is -14.479
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -16.070            -526.251 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -9.539             -55.801 vga_controller:VgaController|clock50_25:c|state[0] 
-    Info (332119):    -3.768             -79.763 clk_fpga 
-    Info (332119):    -2.481            -194.138 clk 
-Info (332146): Worst-case hold slack is -6.797
+    Info (332119):   -14.479            -496.505 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -9.410            -190.989 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.389            -159.865 clk 
+    Info (332119):    -2.259             -32.105 clk_fpga 
+Info (332146): Worst-case hold slack is -5.555
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.797             -87.130 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.671             -11.635 clk_fpga 
-    Info (332119):     0.249               0.000 clk 
-    Info (332119):     0.709               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -5.555            -118.997 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -2.117             -10.904 clk_fpga 
+    Info (332119):     0.370               0.000 clk 
+    Info (332119):     0.681               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -4.901
+Info (332146): Worst-case minimum pulse width slack is -3.955
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.901           -1279.529 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.486            -192.335 clk 
-    Info (332119):    -0.394             -13.427 clk_fpga 
-    Info (332119):    -0.394              -3.849 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -3.955           -1370.564 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.690            -248.283 clk 
+    Info (332119):    -0.394             -15.215 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -0.394             -13.295 clk_fpga 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: display|always1~20  from: datac  to: combout
-    Info (332098): Cell: display|always1~23  from: dataf  to: combout
-    Info (332098): Cell: display|always1~36  from: dataf  to: combout
+    Info (332098): Cell: display|always1~20  from: datad  to: combout
+    Info (332098): Cell: display|always1~23  from: datab  to: combout
+    Info (332098): Cell: display|always1~36  from: datae  to: combout
     Info (332098): Cell: display|ascii[6]~4  from: datab  to: combout
-    Info (332098): Cell: display|case_~12  from: datab  to: combout
-    Info (332098): Cell: display|case_~12  from: datac  to: combout
-    Info (332098): Cell: display|case_~6  from: dataa  to: combout
-    Info (332098): Cell: display|case_~6  from: datae  to: combout
+    Info (332098): Cell: display|case_~6  from: datac  to: combout
+    Info (332098): Cell: display|case_~6  from: dataf  to: combout
     Info (332098): Cell: display|case_~9  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~100  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~101  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~105  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~106  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~107  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~110  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~114  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~115  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~117  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~120  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~124  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~129  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~130  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~131  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~132  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~133  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~135  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~137  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~101  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~102  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~106  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~116  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~11  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~122  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~124  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~125  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~13  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~147  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~148  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~14  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~159  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~160  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~163  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~165  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~170  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~173  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~17  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~183  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~187  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~197  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~198  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~200  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~20  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~214  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~219  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~21  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~220  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~221  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~222  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~228  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~229  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~230  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~155  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~162  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~165  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~175  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~181  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~186  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~188  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~18  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~194  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~195  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~1  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~200  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~201  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~202  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~203  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~209  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~210  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~211  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~214  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~218  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~222  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~228  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~229  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~231  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~233  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~237  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~242  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~243  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~248  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~254  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~255  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~256  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~245  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~250  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~251  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~257  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~258  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~259  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~25  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~265  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~274  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~275  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~280  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~281  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~286  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~287  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~288  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~258  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~259  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~260  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~261  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~262  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~265  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~266  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~267  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~268  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~269  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~270  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~271  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~272  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~273  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~274  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~275  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~277  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~279  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~280  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~284  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~285  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~286  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~287  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~288  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~289  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~290  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~291  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~292  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~293  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~294  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~298  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~299  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~300  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~301  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~302  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~303  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~304  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~305  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~306  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~293  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~294  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~295  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~297  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~29  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~306  from: datac  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~307  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~308  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~309  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~310  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~311  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~312  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~314  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~316  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~325  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~326  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~327  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~328  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~330  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~331  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~332  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~333  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~358  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~359  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~363  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~364  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~367  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~372  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~373  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~379  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~380  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~381  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~3  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~41  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~45  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~49  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~53  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~312  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~313  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~314  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~317  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~318  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~319  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~332  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~333  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~335  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~338  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~339  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~33  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~340  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~342  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~343  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~345  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~346  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~348  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~356  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~357  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~367  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~368  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~375  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~39  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~43  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~44  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~51  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~54  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~55  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~57  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~67  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~72  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~73  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~7  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~82  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~8  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~91  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~97  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~9  from: dataa  to: combout
-    Info (332098): Cell: display|value[0]~129  from: datae  to: combout
-    Info (332098): Cell: display|value[0]~14  from: dataf  to: combout
-    Info (332098): Cell: display|value[0]~19  from: dataa  to: combout
-    Info (332098): Cell: display|value[21]~16  from: datac  to: combout
-    Info (332098): Cell: display|value[21]~16  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~59  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~5  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~60  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~69  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~6  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~74  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~78  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~84  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~88  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~8  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~92  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~96  from: datad  to: combout
+    Info (332098): Cell: display|value[0]~130  from: dataa  to: combout
+    Info (332098): Cell: display|value[0]~15  from: datad  to: combout
+    Info (332098): Cell: display|value[0]~20  from: dataf  to: combout
+    Info (332098): Cell: display|value[31]~17  from: datab  to: combout
+    Info (332098): Cell: display|value[31]~17  from: datae  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -10.239
+Info (332146): Worst-case setup slack is -9.063
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -10.239            -329.680 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -5.380             -30.746 vga_controller:VgaController|clock50_25:c|state[0] 
-    Info (332119):    -2.505             -46.212 clk_fpga 
-    Info (332119):    -1.270             -54.170 clk 
-Info (332146): Worst-case hold slack is -4.002
+    Info (332119):    -9.063            -306.410 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -5.094            -111.480 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.025             -28.380 clk_fpga 
+    Info (332119):    -0.888             -37.749 clk 
+Info (332146): Worst-case hold slack is -3.203
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.002             -44.374 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.160              -2.109 clk_fpga 
-    Info (332119):     0.156               0.000 clk 
-    Info (332119):     0.364               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -3.203             -66.985 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.896              -4.261 clk_fpga 
+    Info (332119):     0.202               0.000 clk 
+    Info (332119):     0.341               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -2.634
+Info (332146): Worst-case minimum pulse width slack is -2.118
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.634            -553.072 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.642            -206.227 clk 
-    Info (332119):    -0.390             -10.218 clk_fpga 
-    Info (332119):    -0.036              -0.070 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.118            -617.475 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.839            -285.463 clk 
+    Info (332119):    -0.391             -10.219 clk_fpga 
+    Info (332119):     0.023               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: display|always1~20  from: datac  to: combout
-    Info (332098): Cell: display|always1~23  from: dataf  to: combout
-    Info (332098): Cell: display|always1~36  from: dataf  to: combout
+    Info (332098): Cell: display|always1~20  from: datad  to: combout
+    Info (332098): Cell: display|always1~23  from: datab  to: combout
+    Info (332098): Cell: display|always1~36  from: datae  to: combout
     Info (332098): Cell: display|ascii[6]~4  from: datab  to: combout
-    Info (332098): Cell: display|case_~12  from: datab  to: combout
-    Info (332098): Cell: display|case_~12  from: datac  to: combout
-    Info (332098): Cell: display|case_~6  from: dataa  to: combout
-    Info (332098): Cell: display|case_~6  from: datae  to: combout
+    Info (332098): Cell: display|case_~6  from: datac  to: combout
+    Info (332098): Cell: display|case_~6  from: dataf  to: combout
     Info (332098): Cell: display|case_~9  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~100  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~101  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~105  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~106  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~107  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~110  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~114  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~115  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~117  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~120  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~124  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~129  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~130  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~131  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~132  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~133  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~135  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~137  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~101  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~102  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~106  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~116  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~11  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~122  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~124  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~125  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~13  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~147  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~148  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~14  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~159  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~160  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~163  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~165  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~170  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~173  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~17  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~183  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~187  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~197  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~198  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~200  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~20  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~213  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~214  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~219  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~21  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~220  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~221  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~222  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~228  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~229  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~230  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~155  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~162  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~165  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~175  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~181  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~186  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~188  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~18  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~194  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~195  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~1  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~200  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~201  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~202  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~203  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~209  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~210  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~211  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~214  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~218  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~222  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~228  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~229  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~231  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~233  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~237  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~242  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~243  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~248  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~254  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~255  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~256  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~245  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~250  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~251  from: datab  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~257  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~258  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~259  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~25  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~265  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~274  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~275  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~280  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~281  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~286  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~287  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~288  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~258  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~259  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~260  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~261  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~262  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~265  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~266  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~267  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~268  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~269  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~270  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~271  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~272  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~273  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~274  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~275  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~277  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~279  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~280  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~284  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~285  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~286  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~287  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~288  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~289  from: dataf  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~290  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~291  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~292  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~293  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~294  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~298  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~299  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~300  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~301  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~302  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~303  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~304  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~305  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~306  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~293  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~294  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~295  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~296  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~297  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~29  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~306  from: datac  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~307  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~308  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~309  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~309  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~310  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~311  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~312  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~314  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~316  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~325  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~326  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~327  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~328  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~330  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~331  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~332  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~333  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~358  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~359  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~363  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~364  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~367  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~372  from: datab  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~373  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~379  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~380  from: datae  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~381  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~3  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~41  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~45  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~49  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~53  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~312  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~313  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~314  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~317  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~318  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~319  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~332  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~333  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~335  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~338  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~339  from: datae  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~33  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~340  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~342  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~343  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~345  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~346  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~347  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~348  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~356  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~357  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~366  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~367  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~368  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~375  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~37  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~39  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~43  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~44  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~51  from: datae  to: combout
     Info (332098): Cell: display|fixed_rom|fixed~54  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~55  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~57  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~67  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~72  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~73  from: datac  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~7  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~82  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~8  from: dataa  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~91  from: dataf  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~97  from: datad  to: combout
-    Info (332098): Cell: display|fixed_rom|fixed~9  from: dataa  to: combout
-    Info (332098): Cell: display|value[0]~129  from: datae  to: combout
-    Info (332098): Cell: display|value[0]~14  from: dataf  to: combout
-    Info (332098): Cell: display|value[0]~19  from: dataa  to: combout
-    Info (332098): Cell: display|value[21]~16  from: datac  to: combout
-    Info (332098): Cell: display|value[21]~16  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~59  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~5  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~60  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~69  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~6  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~74  from: datab  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~78  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~84  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~87  from: dataa  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~88  from: datad  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~8  from: datac  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~92  from: dataf  to: combout
+    Info (332098): Cell: display|fixed_rom|fixed~96  from: datad  to: combout
+    Info (332098): Cell: display|value[0]~130  from: dataa  to: combout
+    Info (332098): Cell: display|value[0]~15  from: datad  to: combout
+    Info (332098): Cell: display|value[0]~20  from: dataf  to: combout
+    Info (332098): Cell: display|value[31]~17  from: datab  to: combout
+    Info (332098): Cell: display|value[31]~17  from: datae  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.104
+Info (332146): Worst-case setup slack is -8.131
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.104            -293.553 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -4.963             -28.518 vga_controller:VgaController|clock50_25:c|state[0] 
-    Info (332119):    -2.037             -38.231 clk_fpga 
-    Info (332119):    -1.013             -42.450 clk 
-Info (332146): Worst-case hold slack is -3.694
+    Info (332119):    -8.131            -274.921 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -4.721            -102.507 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -1.604             -22.059 clk_fpga 
+    Info (332119):    -0.780             -30.560 clk 
+Info (332146): Worst-case hold slack is -2.924
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.694             -40.146 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.278              -4.659 clk_fpga 
-    Info (332119):     0.142               0.000 clk 
-    Info (332119):     0.335               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -2.924             -60.652 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.938              -4.636 clk_fpga 
+    Info (332119):     0.188               0.000 clk 
+    Info (332119):     0.308               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -2.328
+Info (332146): Worst-case minimum pulse width slack is -1.878
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.328            -480.538 vga_controller:VgaController|h_count_reg[3] 
-    Info (332119):    -0.662            -216.403 clk 
-    Info (332119):    -0.429             -12.398 clk_fpga 
-    Info (332119):    -0.003              -0.004 vga_controller:VgaController|clock50_25:c|state[0] 
+    Info (332119):    -1.878            -540.309 vga_controller:VgaController|h_count_reg[3] 
+    Info (332119):    -0.857            -295.495 clk 
+    Info (332119):    -0.429             -12.352 clk_fpga 
+    Info (332119):     0.047               0.000 vga_controller:VgaController|clock50_25:c|state[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5253 megabytes
-    Info: Processing ended: Fri Nov 29 11:21:01 2024
+    Info: Peak virtual memory: 5261 megabytes
+    Info: Processing ended: Wed Dec  4 17:45:20 2024
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 
